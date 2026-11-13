@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shigoto-pc-guide.pages.dev/sitemap.xml
