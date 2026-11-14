@@ -18,6 +18,6 @@ SITE_URL環境変数で公開URLを変更可能。公開先が標準URLと異な
 QualitのA8正規広告を設置。ads.jsonの提供コードは改変しない。トップ320×50、販売店比較300×250、予算・L13・電池記事はテキスト広告。
 お問い合わせはこのリポジトリの公開Issues。個人情報を投稿しない旨を表示。
 価格・在庫のライブ更新なし。実機検証なし。公開URL確定後canonicalとsitemapを照合する。
-Cloudflare解析タグ・Search Consoleの認証コードは未取得で未設置。
+Cloudflare Web Analyticsを全コンテンツページと404に設置。トークンはbuild.pyのBEACONに保存。Search Consoleの確認ファイルはdist/googled51db09eaf8187a0.htmlに配置済み。
 
 PC WRAPの300×250正規バナーを販売店比較ページに追加。ads.jsonのpcwrapは提供コードを改変せず保存。
