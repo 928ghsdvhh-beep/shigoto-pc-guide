@@ -7,7 +7,8 @@ BASE=os.environ.get('SITE_URL','https://shigoto-pc-guide.pages.dev').rstrip('/')
 DATE='2026-11-14'
 ADS=json.loads((ROOT/'ads.json').read_text())
 def adblock(kind):
- return '<div class="affiliate-ad affiliate-'+kind+'" aria-label="広告：Qualit"><div class="ad-label">広告 / Qualit</div>'+ADS[kind]+'</div>'
+ brand='PC WRAP' if kind=='pcwrap' else 'Qualit'
+ return '<div class="affiliate-ad affiliate-'+kind+'" aria-label="広告：'+brand+'"><div class="ad-label">広告 / '+brand+'</div>'+ADS[kind]+'</div>'
 def esc(s): return html.escape(s,quote=True)
 def link(url,label):return f'<a href="{esc(url)}" target="_blank" rel="noopener noreferrer">{label}<span aria-hidden="true"> ↗</span></a>'
 def p(t):return '<p>'+t+'</p>'
@@ -82,7 +83,10 @@ def render(path,title,desc,body,kind='WebPage'):
  if adkind:
   body='<div class="wrap ad-disclosure">このページには広告（アフィリエイトリンク）を含みます。</div>'+body
   if path=='': body=body.replace('</section><div class="principles">','</section>'+adblock(adkind)+'<div class="principles">',1)
-  else: body=body.replace('<div class="sources">',adblock(adkind)+'<div class="sources">',1)
+  else:
+   placement=adblock(adkind)
+   if path=='shop-comparison': placement+=adblock('pcwrap')
+   body=body.replace('<div class="sources">',placement+'<div class="sources">',1)
  schema={'@context':'https://schema.org','@type':kind,'headline':title,'description':desc,'inLanguage':'ja','url':url,'dateModified':DATE,'publisher':{'@type':'Organization','name':'しごとPCくらべ'}}
  page='<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'｜しごとPCくらべ</title><meta name="description" content="'+esc(desc)+'"><link rel="canonical" href="'+esc(url)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(desc)+'"><meta property="og:type" content="'+('article' if kind=='Article' else 'website')+'"><meta property="og:url" content="'+esc(url)+'"><meta name="theme-color" content="#12634f"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False)+'</script><script defer src="/assets/site.js"></script></head><body>'+NAV+'<main>'+body+'</main>'+FOOT+'</body></html>'
  target=OUT/path/'index.html' if path else OUT/'index.html';target.parent.mkdir(parents=True,exist_ok=True);target.write_text(page)
@@ -106,7 +110,7 @@ policies={
 'about':('このサイトについて・編集方針','しごとPCくらべの運営目的と情報の確認方法。',section('運営と目的',p('運営：しごとPCくらべ。文書・表計算・メール・オンライン会議などに使う中古ノートを探す方に向けた独立した情報サイトです。販売店やメーカーの公式サイトではなく、商品の販売・修理は行っていません。'))+section('情報の確認方法',p('メーカー仕様、販売店の利用ガイド、保証規約などを参照し、確認日と参照先を掲載します。元の仕様と中古個体の構成が異なる場合は個体の販売説明を確認します。実機を使っていない記事は購入ガイドとして掲載し、使用体験・測定値・口コミを作りません。'))+section('比較・紹介の基準',p('用途、構成、状態、電池、保証・返品条件を比較します。広告報酬だけを理由に順位を付けず、条件の異なる商品を同条件のように並べません。未確認事項は未確認と記し、価格・在庫が確定しない情報で購入を促しません。'))+section('訂正と更新',p('条件の変更や誤りに気づいた場合は確認のうえ修正します。掲載内容へのご指摘はお問い合わせ窓口へお寄せください。購入契約や保証請求については購入先へ直接ご連絡ください。'))),
 'contact':('お問い合わせ','記事の誤りや掲載内容に関する連絡窓口。',section('記事へのご指摘・ご連絡',p('当サイトの記事の誤り、情報更新のご連絡、掲載内容へのお問い合わせは、運営用GitHubリポジトリのIssuesで受け付けます。投稿にはGitHubアカウントが必要です。')+'<div class="contact-callout">'+link('https://github.com/928ghsdvhh-beep/shigoto-pc-guide/issues/new','GitHubのお問い合わせ画面を開く')+'</div>')+section('ご連絡に含める内容',ul(['該当する記事のURL','修正・確認を希望する箇所','確認できる公式情報のURL（ある場合）'])+p('Issuesの投稿は公開されます。氏名、メールアドレス、住所、注文番号、パスワードなどの個人情報・機密情報は書き込まないでください。'))+section('当サイトで対応できない内容',p('商品購入、配送、返品、修理、保証の個別手続きは販売店へお問い合わせください。当サイトでは注文情報を保有していません。すべてのお問い合わせへの回答や回答期限をお約束するものではありません。'))),
 'privacy':('プライバシーポリシー','当サイトでの情報の取り扱い。',section('当サイトが取得する情報',p('このサイトには、氏名やメールアドレスを入力する独自フォーム、会員登録機能、決済機能はありません。購入前チェックの入力内容は外部へ送信せず、サーバーや端末へ保存しません。運営はしごとPCくらべです。'))+section('アクセス情報',p('当サイトは株式会社ファンコミュニケーションズのA8.net広告を配信しています。広告表示や成果計測に際し、広告配信事業者がCookie等を利用し閲覧・クリック等の情報を取得する場合があります。当サイト独自のアクセス解析タグは設置していません。ホスティング事業者が配信・セキュリティ維持のためアクセス情報を処理する場合があります。利用するサービスや解析機能を変更する際は、必要に応じて本ページを更新します。'))+section('外部サイトと問い合わせ',link('https://www.fancs.com/privacy','ファンコミュニケーションズのプライバシーポリシー')+p('外部リンク先には各事業者のプライバシーポリシーが適用されます。お問い合わせに利用するGitHub Issuesは公開の投稿欄です。個人情報を書き込まないでください。リンク先での情報の扱いは各サービスをご確認ください。'))+section('改定',p('情報の取り扱いや利用サービスの変更に応じて内容を見直します。制定・更新日：2026年11月14日。お問い合わせは当サイトの連絡窓口をご利用ください。'))),
-'advertising':('広告・免責事項','広告リンクと比較情報の扱い。',section('広告の掲載状況',p('当サイトはA8.netを通じてQualitの成果報酬型広告を掲載しています。広告リンクを経由した購入等により、当サイトに紹介料が支払われる場合があります。広告以外の外部リンクは情報・販売条件の確認用です。'))+section('広告と比較の区別',p('広告リンクのあるページに広告を含むことを表示します。広告主・ASPから提供された正規のコードを使用します。広告内の文言は広告主の表現であり、当サイトが全販売店の最安値を保証するものではありません。広告報酬の有無だけで比較結果を決めません。'))+section('購入に関する注意',p('価格・送料・在庫・商品の状態・保証条件は変わることがあります。中古品には個体差があり、同じ機種名でも構成が異なります。契約前に販売店の最新表示を確認し、ご自身の用途に合うか判断してください。'))+section('免責事項',p('正確な情報の提供に努めますが、完全性や将来の状態を保証するものではありません。本サイトの情報は個別商品の動作保証や業務適合性の保証ではなく、購入契約の当事者は購入者と販売事業者です。法令上認められる範囲で責任を取り扱います。')))
+'advertising':('広告・免責事項','広告リンクと比較情報の扱い。',section('広告の掲載状況',p('当サイトはA8.netを通じてQualit・PC WRAPの成果報酬型広告を掲載しています。広告リンクを経由した購入等により、当サイトに紹介料が支払われる場合があります。広告以外の外部リンクは情報・販売条件の確認用です。'))+section('広告と比較の区別',p('広告リンクのあるページに広告を含むことを表示します。広告主・ASPから提供された正規のコードを使用します。広告内の文言は広告主の表現であり、当サイトが全販売店の最安値を保証するものではありません。広告報酬の有無だけで比較結果を決めません。'))+section('購入に関する注意',p('価格・送料・在庫・商品の状態・保証条件は変わることがあります。中古品には個体差があり、同じ機種名でも構成が異なります。契約前に販売店の最新表示を確認し、ご自身の用途に合うか判断してください。'))+section('免責事項',p('正確な情報の提供に努めますが、完全性や将来の状態を保証するものではありません。本サイトの情報は個別商品の動作保証や業務適合性の保証ではなく、購入契約の当事者は購入者と販売事業者です。法令上認められる範囲で責任を取り扱います。')))
 }
 for slug,(title,desc,body) in policies.items():render(slug,title,desc,'<article class="wrap policy"><div class="crumb"><a href="/">ホーム</a></div><h1>'+title+'</h1>'+body+'</article>')
 (OUT/'assets'/'site.js').write_text('''document.addEventListener('DOMContentLoaded',()=>{const s=document.querySelector('#interest'),l=document.querySelector('#finder-link');if(s&&l)s.addEventListener('change',()=>{l.href='/'+s.value+'/';});const inputs=[...document.querySelectorAll('.checklist input')],o=document.querySelector('#check-status');for(const c of inputs)c.addEventListener('change',()=>{o.textContent=inputs.filter(x=>x.checked).length+' / 5 項目を確認';});});''')
