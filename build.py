@@ -81,7 +81,7 @@ NAV='<div class="top"><header class="wrap"><a class="brand" href="/"><b>PC</b>�
 FOOT='<footer class="site-footer"><div class="wrap"><strong>しごとPCくらべ</strong><p>仕事で使う中古ノートを、構成・状態・保証から選ぶための比較ガイド。</p><div class="footerlinks"><a href="/about/">運営・編集方針</a><a href="/contact/">お問い合わせ</a><a href="/privacy/">プライバシー</a><a href="/advertising/">広告について</a></div><div class="footer-bottom"><span>公式資料の調査に基づく情報です。実機未検証の使用感は評価していません。</span><span>© 2026 しごとPCくらべ</span></div></div></footer>'
 def render(path,title,desc,body,kind='WebPage'):
  url=BASE+('/' if path=='' else '/'+path+'/')
- adkind={'':'wide','shop-comparison':'square','budget-50000':'pcwrap_thinkpad','thinkpad-l13':'pcwrap_thinkpad','latitude-5310':'pcwrap_latitude','battery-warranty':'text'}.get(path)
+ adkind={'':'wide','shop-comparison':'square','budget-50000':'pcwrap_thinkpad','thinkpad-l13':'pcwrap_thinkpad','latitude-5310':'pcwrap_latitude','battery-warranty':'qualit_notebooks','memory-8gb-16gb':'qualit_notebooks'}.get(path)
  if adkind:
   body='<div class="wrap ad-disclosure">このページには広告（アフィリエイトリンク）を含みます。</div>'+body
   if path=='': body=body.replace('</section><div class="principles">','</section>'+adblock(adkind)+'<div class="principles">',1)
@@ -92,6 +92,16 @@ def render(path,title,desc,body,kind='WebPage'):
    if adkind=='pcwrap_latitude':
     placement='<section class="purchase-route"><h2>Latitudeの販売条件を確認する</h2><p>PC WRAPのLatitude一覧へ進みます。5310を検討する場合は、機種名・メモリ容量・SSD・画面・個体の状態・保証条件を照合してください。</p>'+placement+'<p class="meta">一覧には5310以外の機種も含まれます。個別商品の在庫や価格を保証するものではありません。</p></section>'
    if path=='shop-comparison': placement+=adblock('pcwrap')
+   if path in ('shop-comparison','budget-50000','battery-warranty','memory-8gb-16gb'):
+    intro={
+     'shop-comparison':'Qualitの中古Windowsノート一覧で、個体の状態・保証区分・送料を確認できます。PC WRAPと比較する際は、同じ機種・構成で条件を揃えてください。',
+     'budget-50000':'Qualitの中古Windowsノート一覧で、予算に合う構成を探せます。表示価格だけでなく、送料や必要なソフトを含めた総額を確認してください。',
+     'battery-warranty':'Qualitの中古Windowsノート一覧で、購入する個体の電池情報と商品区分を確認してください。電池の状態基準と、購入後の保証対象は別に読みます。',
+     'memory-8gb-16gb':'Qualitの中古Windowsノート一覧で、必要なメモリ容量の個体を比較できます。増設できない機種もあるため、容量と型番を購入前に確認してください。'
+    }[path]
+    catalog='<section class="purchase-route"><h2>Qualitで中古ノートを比較する</h2><p>'+intro+'</p>'+adblock('qualit_notebooks')+'<p class="meta">個別商品ではなく中古Windowsノートの一覧へ進みます。価格・在庫・状態・保証条件は商品ごとに確認してください。</p></section>'
+    if adkind=='qualit_notebooks': placement=catalog
+    else: placement+=catalog
    body=body.replace('<div class="sources">',placement+'<div class="sources">',1)
  schema={'@context':'https://schema.org','@type':kind,'headline':title,'description':desc,'inLanguage':'ja','url':url,'dateModified':DATE,'publisher':{'@type':'Organization','name':'しごとPCくらべ'}}
  page='<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'｜しごとPCくらべ</title><meta name="description" content="'+esc(desc)+'"><link rel="canonical" href="'+esc(url)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(desc)+'"><meta property="og:type" content="'+('article' if kind=='Article' else 'website')+'"><meta property="og:url" content="'+esc(url)+'"><meta name="theme-color" content="#12634f"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"><script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False)+'</script><script defer src="/assets/site.js"></script></head><body>'+NAV+'<main>'+body+'</main>'+FOOT+BEACON+'</body></html>'
