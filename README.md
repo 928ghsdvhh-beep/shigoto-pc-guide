@@ -21,3 +21,5 @@ QualitのA8正規広告を設置。ads.jsonの提供コードは改変しない�
 Cloudflare Web Analyticsを全コンテンツページと404に設置。トークンはbuild.pyのBEACONに保存。Search Consoleの確認ファイルはdist/googled51db09eaf8187a0.htmlに配置済み。
 
 PC WRAPの300×250正規バナーを販売店比較ページに追加。ads.jsonのpcwrapは提供コードを改変せず保存。
+
+2026-11-14: A8で発行されたPC WRAP ThinkPad一覧リンクをL13・予算別記事に設置。個別商品リンクではない旨を記載。URLや広告文・計測画像は変更しない。
