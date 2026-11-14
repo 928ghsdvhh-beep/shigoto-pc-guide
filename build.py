@@ -81,7 +81,7 @@ NAV='<div class="top"><header class="wrap"><a class="brand" href="/"><b>PC</b>�
 FOOT='<footer class="site-footer"><div class="wrap"><strong>しごとPCくらべ</strong><p>仕事で使う中古ノートを、構成・状態・保証から選ぶための比較ガイド。</p><div class="footerlinks"><a href="/about/">運営・編集方針</a><a href="/contact/">お問い合わせ</a><a href="/privacy/">プライバシー</a><a href="/advertising/">広告について</a></div><div class="footer-bottom"><span>公式資料の調査に基づく情報です。実機未検証の使用感は評価していません。</span><span>© 2026 しごとPCくらべ</span></div></div></footer>'
 def render(path,title,desc,body,kind='WebPage'):
  url=BASE+('/' if path=='' else '/'+path+'/')
- adkind={'':'wide','shop-comparison':'square','budget-50000':'pcwrap_thinkpad','thinkpad-l13':'pcwrap_thinkpad','battery-warranty':'text'}.get(path)
+ adkind={'':'wide','shop-comparison':'square','budget-50000':'pcwrap_thinkpad','thinkpad-l13':'pcwrap_thinkpad','latitude-5310':'pcwrap_latitude','battery-warranty':'text'}.get(path)
  if adkind:
   body='<div class="wrap ad-disclosure">このページには広告（アフィリエイトリンク）を含みます。</div>'+body
   if path=='': body=body.replace('</section><div class="principles">','</section>'+adblock(adkind)+'<div class="principles">',1)
@@ -89,6 +89,8 @@ def render(path,title,desc,body,kind='WebPage'):
    placement=adblock(adkind)
    if adkind=='pcwrap_thinkpad':
     placement='<section class="purchase-route"><h2>ThinkPadの販売条件を確認する</h2><p>PC WRAPのThinkPad一覧へ進みます。L13を検討する場合は、機種名・世代・メモリ容量・画面・状態・保証条件を確認してください。</p>'+placement+'<p class="meta">一覧にはL13以外の機種も含まれます。個別商品の在庫や価格を保証するものではありません。</p></section>'
+   if adkind=='pcwrap_latitude':
+    placement='<section class="purchase-route"><h2>Latitudeの販売条件を確認する</h2><p>PC WRAPのLatitude一覧へ進みます。5310を検討する場合は、機種名・メモリ容量・SSD・画面・個体の状態・保証条件を照合してください。</p>'+placement+'<p class="meta">一覧には5310以外の機種も含まれます。個別商品の在庫や価格を保証するものではありません。</p></section>'
    if path=='shop-comparison': placement+=adblock('pcwrap')
    body=body.replace('<div class="sources">',placement+'<div class="sources">',1)
  schema={'@context':'https://schema.org','@type':kind,'headline':title,'description':desc,'inLanguage':'ja','url':url,'dateModified':DATE,'publisher':{'@type':'Organization','name':'しごとPCくらべ'}}
