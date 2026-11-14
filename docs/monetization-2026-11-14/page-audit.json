@@ -1,0 +1,241 @@
+{
+  "site": "shigoto-pc-guide",
+  "pages": 13,
+  "indexable": 12,
+  "sitemap_urls": 12,
+  "issues": [],
+  "page_audit": [
+    {
+      "path": "index.html",
+      "title": "仕事用中古ノートの選び方・販売店比較｜しごとPCくらべ",
+      "h1": "仕事の一台を、<br><em>納得して</em>選ぼう。",
+      "description": "予算3〜5万円の仕事用中古ノートを、構成・外観・電池・保証から比較。ThinkPad L13、Latitude 5310、QualitとPC WRAPの購入条件を整理。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/",
+      "noindex": false,
+      "text_characters": 1365,
+      "html_bytes": 10910,
+      "schema_types": [
+        "WebPage"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 3,
+      "images": 2,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "404.html",
+      "title": "ページが見つかりません｜しごとPCくらべ",
+      "h1": "ページが見つかりません",
+      "description": null,
+      "canonical": null,
+      "noindex": true,
+      "text_characters": 59,
+      "html_bytes": 765,
+      "schema_types": [],
+      "internal_links": 1,
+      "affiliate_links": 0,
+      "images": 0,
+      "review_summary_added": false,
+      "reachable_from_home": false
+    },
+    {
+      "path": "budget-50000/index.html",
+      "title": "3〜5万円の仕事用中古ノート。価格以外に見る6項目｜しごとPCくらべ",
+      "h1": "3〜5万円の仕事用中古ノート。価格以外に見る6項目",
+      "description": "文書・表計算・メール・オンライン会議。毎日の使い方から、必要な構成を絞ります。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/budget-50000/",
+      "noindex": false,
+      "text_characters": 2324,
+      "html_bytes": 11839,
+      "schema_types": [
+        "Article"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 4,
+      "images": 2,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "battery-warranty/index.html",
+      "title": "中古ノートの電池。「容量の基準」と「保証」を分けて確認｜しごとPCくらべ",
+      "h1": "中古ノートの電池。「容量の基準」と「保証」を分けて確認",
+      "description": "買うときの電池状態と、買った後に交換してもらえる条件は別です。持ち運び用の購入前チェック。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/battery-warranty/",
+      "noindex": false,
+      "text_characters": 1666,
+      "html_bytes": 9339,
+      "schema_types": [
+        "Article"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 2,
+      "images": 1,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "thinkpad-l13-vs-latitude-5310/index.html",
+      "title": "ThinkPad L13とLatitude 5310を比較。中古で迷ったときの選び方｜しごとPCくらべ",
+      "h1": "ThinkPad L13とLatitude 5310を比較。中古で迷ったときの選び方",
+      "description": "同じ予算で見つかる2台。メモリの増設、画面、電池、保証を揃えて、手元の候補を比べます。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/thinkpad-l13-vs-latitude-5310/",
+      "noindex": false,
+      "text_characters": 2565,
+      "html_bytes": 12616,
+      "schema_types": [
+        "Article"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 4,
+      "images": 2,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "privacy/index.html",
+      "title": "プライバシーポリシー｜しごとPCくらべ",
+      "h1": "プライバシーポリシー",
+      "description": "当サイトでの情報の取り扱い。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/privacy/",
+      "noindex": false,
+      "text_characters": 849,
+      "html_bytes": 4756,
+      "schema_types": [
+        "WebPage"
+      ],
+      "internal_links": 6,
+      "affiliate_links": 0,
+      "images": 0,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "memory-8gb-16gb/index.html",
+      "title": "中古ノートの8GBと16GB。使い方と増設可否から選ぶ｜しごとPCくらべ",
+      "h1": "中古ノートの8GBと16GB。使い方と増設可否から選ぶ",
+      "description": "必要な容量はアプリと同時作業で変わります。OSの最小要件と、日々の仕事の余裕を分けて考えます。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/memory-8gb-16gb/",
+      "noindex": false,
+      "text_characters": 1687,
+      "html_bytes": 9307,
+      "schema_types": [
+        "Article"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 2,
+      "images": 1,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "advertising/index.html",
+      "title": "広告・免責事項｜しごとPCくらべ",
+      "h1": "広告・免責事項",
+      "description": "広告リンクと比較情報の扱い。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/advertising/",
+      "noindex": false,
+      "text_characters": 629,
+      "html_bytes": 3975,
+      "schema_types": [
+        "WebPage"
+      ],
+      "internal_links": 6,
+      "affiliate_links": 0,
+      "images": 0,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "shop-comparison/index.html",
+      "title": "QualitとPC WRAPを比較。保証・返品のどこが違う？｜しごとPCくらべ",
+      "h1": "QualitとPC WRAPを比較。保証・返品のどこが違う？",
+      "description": "中古ノートは本体価格に加えて、届いた後の対応も購入条件です。保証の年数だけで決めないための比較。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/shop-comparison/",
+      "noindex": false,
+      "text_characters": 2235,
+      "html_bytes": 12695,
+      "schema_types": [
+        "Article"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 8,
+      "images": 5,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "latitude-5310/index.html",
+      "title": "Latitude 5310の中古選び。メモリ構成と状態を揃えて比較｜しごとPCくらべ",
+      "h1": "Latitude 5310の中古選び。メモリ構成と状態を揃えて比較",
+      "description": "CPUが同じでも、液晶・SSD・電池・外観で条件は変わります。販売個体を読むためのガイド。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/latitude-5310/",
+      "noindex": false,
+      "text_characters": 1729,
+      "html_bytes": 9302,
+      "schema_types": [
+        "Article"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 2,
+      "images": 1,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "thinkpad-l13/index.html",
+      "title": "ThinkPad L13の中古選び。世代・メモリ・画面の確認ポイント｜しごとPCくらべ",
+      "h1": "ThinkPad L13の中古選び。世代・メモリ・画面の確認ポイント",
+      "description": "「L13」という名前だけでは同じ構成になりません。第10世代インテル搭載モデルを中心に確認します。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/thinkpad-l13/",
+      "noindex": false,
+      "text_characters": 1689,
+      "html_bytes": 9175,
+      "schema_types": [
+        "Article"
+      ],
+      "internal_links": 12,
+      "affiliate_links": 2,
+      "images": 1,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "contact/index.html",
+      "title": "お問い合わせ｜しごとPCくらべ",
+      "h1": "お問い合わせ",
+      "description": "記事の誤りや掲載内容に関する連絡窓口。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/contact/",
+      "noindex": false,
+      "text_characters": 501,
+      "html_bytes": 3775,
+      "schema_types": [
+        "WebPage"
+      ],
+      "internal_links": 6,
+      "affiliate_links": 0,
+      "images": 0,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    },
+    {
+      "path": "about/index.html",
+      "title": "このサイトについて・編集方針｜しごとPCくらべ",
+      "h1": "このサイトについて・編集方針",
+      "description": "しごとPCくらべの運営目的と情報の確認方法。",
+      "canonical": "https://shigoto-pc-guide.pages.dev/about/",
+      "noindex": false,
+      "text_characters": 603,
+      "html_bytes": 4018,
+      "schema_types": [
+        "WebPage"
+      ],
+      "internal_links": 6,
+      "affiliate_links": 0,
+      "images": 0,
+      "review_summary_added": false,
+      "reachable_from_home": true
+    }
+  ]
+}

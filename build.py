@@ -150,10 +150,16 @@ paths=['']+[a['slug'] for a in articles]+list(policies)
 (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+'/'+s+('/' if s else '')+'</loc><lastmod>'+DATE+'</lastmod></url>' for s in paths)+'</urlset>')
 (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
 (OUT/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n')
-(OUT/'404.html').write_text('<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ページが見つかりません｜しごとPCくらべ</title><link rel="stylesheet" href="/assets/style.css"><main class="wrap policy"><h1>ページが見つかりません</h1><p>URLが変更されたか、ページが存在しません。</p><a href="/">ホームへ戻る</a></main></html>')
+(OUT/'404.html').write_text('<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ページが見つかりません｜しごとPCくらべ</title><link rel="stylesheet" href="/assets/style.css"></head><body><main class="wrap policy"><h1>ページが見つかりません</h1><p>URLが変更されたか、ページが存在しません。</p><a href="/">ホームへ戻る</a></main></body></html>')
 for generated in OUT.rglob('*.html'):
  if generated.name.startswith('google'): continue
  content=generated.read_text()
  if BEACON not in content:
   generated.write_text(content.replace('</html>',BEACON+'</html>'))
 print('Generated',len(paths),'pages')
+
+from monetization import apply as improve_monetization
+improve_monetization(OUT)
+
+from article_quality import apply as improve_article_quality
+improve_article_quality(OUT)
