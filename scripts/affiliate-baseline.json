@@ -1,0 +1,52 @@
+{
+  "note": "Snapshot from main or its existing build before editorial changes; do not regenerate to hide advertising changes.",
+  "tracking_ids": [],
+  "protected_html_sha256": {
+    "index.html": [
+      "021de5ce69bf0f0dbf6895470cd4b80c2ac27009c78d8b837ae6273c9b073aeb",
+      "5c0a6f8eaf6f2228c56c8e98a9ddca1fa50c7fbcdbb67e5d0e45efc34cf3c7ca"
+    ],
+    "404.html": [],
+    "googled51db09eaf8187a0.html": [],
+    "budget-50000/index.html": [
+      "0cef3cbc63ad0818e1c2709991316826dd0cb09b8d377e6b4cbac0dc932ca5d6",
+      "1a4d48faf9837c7f89428dcee09428d7fb544712083595a8a41a18e4fcfa9bbb",
+      "4cdb85d43f29adb236296c527df15b281e7a4f1e2a80749ba507a5c2fa6a14e6",
+      "61d96747469520f67b6c0171c4797c3a7e796210a14c2bd0ff93313c906b2166"
+    ],
+    "battery-warranty/index.html": [
+      "1a4d48faf9837c7f89428dcee09428d7fb544712083595a8a41a18e4fcfa9bbb",
+      "61d96747469520f67b6c0171c4797c3a7e796210a14c2bd0ff93313c906b2166"
+    ],
+    "thinkpad-l13-vs-latitude-5310/index.html": [
+      "0680769ab5f33201977bf801c77e69ae50dbe126e332604a14c410cb3211e5cc",
+      "0cef3cbc63ad0818e1c2709991316826dd0cb09b8d377e6b4cbac0dc932ca5d6",
+      "4cdb85d43f29adb236296c527df15b281e7a4f1e2a80749ba507a5c2fa6a14e6",
+      "901626d33dc7a5a18a2b680efa9d43bfce926554f274f27148bf1597b8eb4fc9"
+    ],
+    "privacy/index.html": [],
+    "memory-8gb-16gb/index.html": [
+      "1a4d48faf9837c7f89428dcee09428d7fb544712083595a8a41a18e4fcfa9bbb",
+      "61d96747469520f67b6c0171c4797c3a7e796210a14c2bd0ff93313c906b2166"
+    ],
+    "advertising/index.html": [],
+    "shop-comparison/index.html": [
+      "1a4d48faf9837c7f89428dcee09428d7fb544712083595a8a41a18e4fcfa9bbb",
+      "24a76c1acb46411ea64cbd37ff8e6f0ce62830e0408184179737895fa3bee7b0",
+      "61d96747469520f67b6c0171c4797c3a7e796210a14c2bd0ff93313c906b2166",
+      "9744c0f1688fbbb564b0ab6309360be133b760d61ff3d27c88ebb745f28fd484",
+      "a2c7123fbaec5be7796a1f04a206ecf98e0360f74bcc94b1f200efa24ca1eb98",
+      "a678d43ddb11ba58fec77addd32b8d9c936235f73d142da6fe21f4d3ef77822b"
+    ],
+    "latitude-5310/index.html": [
+      "0680769ab5f33201977bf801c77e69ae50dbe126e332604a14c410cb3211e5cc",
+      "901626d33dc7a5a18a2b680efa9d43bfce926554f274f27148bf1597b8eb4fc9"
+    ],
+    "thinkpad-l13/index.html": [
+      "0cef3cbc63ad0818e1c2709991316826dd0cb09b8d377e6b4cbac0dc932ca5d6",
+      "4cdb85d43f29adb236296c527df15b281e7a4f1e2a80749ba507a5c2fa6a14e6"
+    ],
+    "contact/index.html": [],
+    "about/index.html": []
+  }
+}

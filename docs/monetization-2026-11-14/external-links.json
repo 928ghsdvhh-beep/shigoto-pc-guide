@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://www.microsoft.com/ja-jp/windows/windows-11-specifications/",
+    "error": "HTTP Error 403: Forbidden",
+    "pages": [
+      "shigoto-pc-guide/budget-50000/index.html",
+      "shigoto-pc-guide/memory-8gb-16gb/index.html"
+    ]
+  },
+  {
+    "url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_L13/ThinkPad_L13_Spec.PDF",
+    "status": 200,
+    "final_url": "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_L13/ThinkPad_L13_Spec.PDF",
+    "content_type": "application/pdf",
+    "pages": [
+      "shigoto-pc-guide/budget-50000/index.html",
+      "shigoto-pc-guide/thinkpad-l13-vs-latitude-5310/index.html",
+      "shigoto-pc-guide/memory-8gb-16gb/index.html",
+      "shigoto-pc-guide/thinkpad-l13/index.html"
+    ]
+  },
+  {
+    "url": "https://www.dell.com/support/manuals/ja-jp/latitude-13-5310-laptop/latitude_5310_ss/メモリー?guid=guid-f07064b8-2eb4-49ec-88a8-43b102e42417&lang=ja-jp",
+    "error": "HTTP Error 403: Forbidden",
+    "pages": [
+      "shigoto-pc-guide/budget-50000/index.html",
+      "shigoto-pc-guide/thinkpad-l13-vs-latitude-5310/index.html",
+      "shigoto-pc-guide/memory-8gb-16gb/index.html",
+      "shigoto-pc-guide/latitude-5310/index.html"
+    ]
+  },
+  {
+    "url": "https://www.yrl-qualit.com/html/page37.html",
+    "status": 200,
+    "final_url": "https://www.yrl-qualit.com/html/page37.html",
+    "content_type": "text/html; charset=EUC-JP",
+    "pages": [
+      "shigoto-pc-guide/battery-warranty/index.html",
+      "shigoto-pc-guide/shop-comparison/index.html",
+      "shigoto-pc-guide/shop-comparison/index.html"
+    ]
+  },
+  {
+    "url": "https://www.yrl-qualit.com/html/page1.html",
+    "status": 200,
+    "final_url": "https://www.yrl-qualit.com/html/page1.html",
+    "content_type": "text/html; charset=EUC-JP",
+    "pages": [
+      "shigoto-pc-guide/battery-warranty/index.html",
+      "shigoto-pc-guide/shop-comparison/index.html"
+    ]
+  },
+  {
+    "url": "https://www.pcwrap.com/content/ship",
+    "status": 200,
+    "final_url": "https://www.pcwrap.com/content/ship",
+    "content_type": "text/html; charset=UTF-8",
+    "pages": [
+      "shigoto-pc-guide/battery-warranty/index.html",
+      "shigoto-pc-guide/shop-comparison/index.html",
+      "shigoto-pc-guide/shop-comparison/index.html"
+    ]
+  },
+  {
+    "url": "https://www.cloudflare.com/privacypolicy/",
+    "status": 200,
+    "final_url": "https://www.cloudflare.com/privacypolicy/",
+    "content_type": "text/html; charset=utf-8",
+    "pages": [
+      "shigoto-pc-guide/privacy/index.html",
+      "amazon-members-guide/privacy.html"
+    ]
+  },
+  {
+    "url": "https://www.fancs.com/privacy",
+    "status": 200,
+    "final_url": "https://www.fancs.com/privacy/",
+    "content_type": "text/html; charset=utf-8",
+    "pages": [
+      "shigoto-pc-guide/privacy/index.html"
+    ]
+  },
+  {
+    "url": "https://www.be-stock.com/shop2/note/dell/latitude/5310.html",
+    "status": 200,
+    "final_url": "https://www.be-stock.com/shop2/note/dell/latitude/5310.html",
+    "content_type": "text/html; charset=UTF-8",
+    "pages": [
+      "shigoto-pc-guide/latitude-5310/index.html"
+    ]
+  },
+  {
+    "url": "https://www.pcwrap.com/item/index/?keyword=THINKPAD%20L13",
+    "status": 200,
+    "final_url": "https://www.pcwrap.com/item/index/?keyword=THINKPAD%20L13",
+    "content_type": "text/html; charset=UTF-8",
+    "pages": [
+      "shigoto-pc-guide/thinkpad-l13/index.html"
+    ]
+  },
+  {
+    "url": "https://github.com/928ghsdvhh-beep/shigoto-pc-guide/issues/new",
+    "status": 200,
+    "final_url": "https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2F928ghsdvhh-beep%2Fshigoto-pc-guide%2Fissues%2Fnew",
+    "content_type": "text/html; charset=utf-8",
+    "pages": [
+      "shigoto-pc-guide/contact/index.html"
+    ]
+  }
+]

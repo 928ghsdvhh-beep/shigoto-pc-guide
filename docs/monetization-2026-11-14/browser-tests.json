@@ -1,0 +1,898 @@
+{
+  "note": "Local Chromium; external images, ads and analytics blocked. This verifies layout, not live network speed or affiliate attribution.",
+  "viewports": [
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "404.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "404.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "404.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "budget-50000/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 376.609375
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 376.609375
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "budget-50000/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 376.609375
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 376.609375
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "budget-50000/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "battery-warranty/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 363.390625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 363.390625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "battery-warranty/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 363.390625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 363.390625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "battery-warranty/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "thinkpad-l13-vs-latitude-5310/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 234.625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 234.625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "thinkpad-l13-vs-latitude-5310/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 234.625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 234.625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "thinkpad-l13-vs-latitude-5310/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 2
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "privacy/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "privacy/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "privacy/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "memory-8gb-16gb/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 307.859375
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 307.859375
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "memory-8gb-16gb/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 307.859375
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 307.859375
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "memory-8gb-16gb/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "advertising/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "advertising/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "advertising/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "shop-comparison/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 214.984375
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 214.984375
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 5
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "shop-comparison/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 214.984375
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 214.984375
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 5
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "shop-comparison/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 5
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "latitude-5310/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 332.140625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 332.140625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "latitude-5310/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 332.140625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 332.140625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "latitude-5310/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "thinkpad-l13/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 376.625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 376.625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "thinkpad-l13/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "cls": "",
+          "width": 490
+        },
+        {
+          "tag": "THEAD",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TH",
+          "cls": "",
+          "width": 376.625
+        },
+        {
+          "tag": "TBODY",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        },
+        {
+          "tag": "TD",
+          "cls": "",
+          "width": 376.625
+        },
+        {
+          "tag": "TR",
+          "cls": "",
+          "width": 489
+        }
+      ],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "thinkpad-l13/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 1
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "contact/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "contact/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "contact/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "about/index.html",
+      "width": 360,
+      "scrollWidth": 360,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "about/index.html",
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": [],
+      "images": 0
+    },
+    {
+      "repo": "shigoto-pc-guide",
+      "path": "about/index.html",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "overflow": [],
+      "images": 0
+    }
+  ],
+  "smoke": [
+    {
+      "site": "shigoto-pc-guide",
+      "test": "関心別の記事案内",
+      "pass": true
+    }
+  ]
+}
