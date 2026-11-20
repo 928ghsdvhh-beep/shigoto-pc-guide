@@ -13,7 +13,8 @@ def apply(out):
         addition=additions.get(rel)
         if addition:
             # Keep additions inside the existing article column.
-            marker='<section class="purchase-route">' if '<section class="purchase-route">' in text else '</article>' if '</article>' in text else '</main>'
+            markers = ('<div id="purchase-options">', '<section class="purchase-route">', '</article>', '</main>')
+            marker = next(candidate for candidate in markers if candidate in text)
             text=text.replace(marker,addition+marker,1)
         text=text.replace('</head>','<link rel="stylesheet" href="/decision-guide.css"></head>')
         if rel in ('goods/nogi-photo-holder24.html','goods/nogi-photo-holder25.html'):

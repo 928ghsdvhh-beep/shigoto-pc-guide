@@ -95,6 +95,15 @@ def icon(n):return '<svg viewBox="0 0 64 64" aria-hidden="true">'+ICONS[n]+'</sv
 def card(a):return f'<a class="card" href="/{a["slug"]}/"><div class="thumb">{icon(a["icon"])}</div><div><span class="tag">{a["tag"]}</span><h3>{a["title"]}</h3><p>{a["dek"]}</p></div></a>'
 NAV='<div class="top"><header class="wrap"><a class="brand" href="/"><b>PC</b>しごとPCくらべ</a><nav aria-label="メイン"><a href="/#guides">選び方</a><a href="/shop-comparison/">販売店比較</a><a href="/about/">このサイトについて</a></nav></header></div>'
 FOOT='<footer class="site-footer"><div class="wrap"><strong>しごとPCくらべ</strong><p>仕事で使う中古ノートを、構成・状態・保証から選ぶための比較ガイド。</p><div class="footerlinks"><a href="/about/">運営・編集方針</a><a href="/contact/">お問い合わせ</a><a href="/privacy/">プライバシー</a><a href="/advertising/">広告について</a></div><div class="footer-bottom"><span>公式資料の調査に基づく情報です。実機未検証の使用感は評価していません。</span><span>© 2026 しごとPCくらべ</span></div></div></footer>'
+PURCHASE_LINKS = {
+ 'shop-comparison': ('販売店ごとの在庫を見る', '候補を比べるなら、同じ型番・メモリ容量の個体をそれぞれの販売店で探し、送料込みの総額と返品条件を見比べましょう。'),
+ 'budget-50000': ('3〜5万円の候補を探す', '予算5万円が上限なら、本体価格に送料や必要なソフト代を足した総額で、候補を絞りましょう。'),
+ 'thinkpad-l13': ('ThinkPad L13の在庫を探す', '同じL13でも世代や構成が異なります。候補が見つかったら、販売ページのCPU型番とメモリ容量を照合しましょう。'),
+ 'latitude-5310': ('Latitude 5310の在庫を探す', 'Latitudeの在庫一覧で「5310」を探し、同じ型番でも画面やSSD容量が希望に合うか確認しましょう。'),
+ 'memory-8gb-16gb': ('必要なメモリ容量で候補を探す', '増設を考えている場合は、16GB搭載済みの個体と、8GBの個体に部品代を足した総額を比べてみましょう。'),
+ 'battery-warranty': ('電池の状態が分かる候補を探す', '持ち歩く予定なら、候補の販売ページで電池の記載を確認し、電池が保証対象かも合わせて確認しましょう。'),
+ 'thinkpad-l13-vs-latitude-5310': ('2機種の在庫を見比べる', 'L13と5310が同じ価格帯なら、メモリ容量・画面・電池の記載をそろえて、販売中の個体同士で比べましょう。')
+}
 def render(path,title,desc,body,kind='WebPage'):
  url=BASE+('/' if path=='' else '/'+path+'/')
  adkind={'':'wide','thinkpad-l13-vs-latitude-5310':'pcwrap_thinkpad','shop-comparison':'square','budget-50000':'pcwrap_thinkpad','thinkpad-l13':'pcwrap_thinkpad','latitude-5310':'pcwrap_latitude','battery-warranty':'qualit_notebooks','memory-8gb-16gb':'qualit_notebooks'}.get(path)
@@ -120,6 +129,8 @@ def render(path,title,desc,body,kind='WebPage'):
     catalog='<section class="purchase-route"><h2>Qualitで中古ノートを比較する</h2><p>'+intro+'</p>'+adblock('qualit_notebooks')+'<p class="meta">個別商品ではなく中古Windowsノートの一覧へ進みます。価格・在庫・状態・保証条件は商品ごとに確認してください。</p></section>'
     if adkind=='qualit_notebooks': placement=catalog
     else: placement+=catalog
+   purchase_hint=p(PURCHASE_LINKS[path][1])
+   placement='<div id="purchase-options">'+purchase_hint+placement+'</div>'
    body=body.replace('<div class="sources">',placement+'<div class="sources">',1)
  if path in ('thinkpad-l13','latitude-5310'):
   body=body.replace('<div class="sources">','<section><h2>もう一方の機種と比べる</h2><p><a href="/thinkpad-l13-vs-latitude-5310/">ThinkPad L13とLatitude 5310の比較記事を読む</a>。メモリ構造と購入条件を並べて確認できます。</p></section><div class="sources">',1)
@@ -134,6 +145,9 @@ for a in articles:
   return '<h2 id="part-'+str(i[0])+'">'+m.group(1)+'</h2>'
  b=re.sub(r'<h2>(.*?)</h2>',heading,a['body'])
  headings=re.findall(r'<h2 id="([^"]+)">(.*?)</h2>',b)
+ purchase_link=PURCHASE_LINKS.get(a['slug'])
+ if purchase_link:
+  headings.insert(0, ('purchase-options', purchase_link[0]))
  toc='<div class="toc"><strong>このページの内容</strong><ol>'+''.join(f'<li><a href="#{id}">{t}</a></li>' for id,t in headings)+'</ol></div>'
  sources='<div class="sources"><strong>確認した一次情報</strong><ul>'+''.join('<li>'+link(u,t)+'</li>' for u,t in a['sources'])+'</ul><p>情報確認日：2026年11月14日。条件は変更される場合があります。購入時は販売店の最新表示をご確認ください。</p></div>'
  side='<aside><div class="sidebox"><h2>あわせて読みたい</h2>'+''.join(f'<a href="/{x["slug"]}/">{x["title"]}</a>' for x in articles if x!=a)+'</div><div class="sidebox"><h2>情報の扱い</h2><p>販売店の公表条件と、当サイトの選び方の提案を分けています。</p><a href="/about/">編集方針を読む →</a></div></aside>'
